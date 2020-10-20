@@ -368,6 +368,19 @@
                         </li>
                     </ul>
                 </div>
+                <section class="subscription-form-section">
+                    <form action="#" method="GET" class="subscription-form">
+                        <h3 class="subtitle">Подпишитесь на рассылку</h3>
+                        <div class="subscription-input">
+                            <input type="email" class="subscription-form_input" name="user-email" id="user-email" placeholder="E-mail" required>
+                            <button type="submit" class="subscription-form-btn"> Подписаться
+                                <svg class="social-svg">
+                                    <use href="./images/sprite.svg#icon-telegram"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </section>
             </div>
         </footer>
         <div class="backdrop" data-modal>
@@ -378,19 +391,41 @@
                     </svg>
                 </button>
                 <form action="#" method="GET" class="contact-form">
-                    <h4 class="modal-subtitle">Оставьте свои данные, мы вам перезвоним</h4>
-                    <p class="modal-paragraph">Имя</p>
-                    <input type="text" class="contact-form_input" name="user-name" required minlength="2">
-                    <p class="modal-paragraph">Телефон</p>
-                    <input type="tel" class="contact-form_input" name="user-phone" required>
-                    <p class="modal-paragraph">Почта</p>
-                    <input type="email" class="contact-form_input" name="user-email" required>
-                    <p class="modal-paragraph">Комментарий</p>
-                    <textarea class="contact-form_message" name="user-message" placeholder="Введите текст"></textarea>
-                    <input type="checkbox" class="contact-form_radio" name="user-consent">
-                    <p class="checkbox-text">Соглашаюсь с рассылкой и принимаю <span class="checkbox-styles">Условия договора</span></p>  
-                    <div class="btn-wrapper">
-                        <button type="submit" class="contact-form_submit">Отправить</button>
+                    <h3 class="modal-subtitle">Оставьте свои данные, мы вам перезвоним</h4>
+                    <label class="modal-paragraph" for="user-name">
+                        Имя
+                        <span class="modal-paragraph-wrapper">
+                            <input type="text" class="contact-form_input" name="user-name" id="user-name" required>
+                            <svg width="12" height="12" class="modal-svg">
+                                <use href="./images/sprite.svg#icon-man"></use>
+                            </svg>
+                        </span>
+                    </label> 
+                    <label class="modal-paragraph" for="user-phone">
+                        Телефон
+                        <span class="modal-paragraph-wrapper">
+                            <input type="tel" class="contact-form_input" name="user-phone" id="user-phone" required>
+                            <svg width="13" height="13" class="modal-svg">
+                                <use href="./images/sprite.svg#icon-tel"></use>
+                            </svg>
+                        </span>
+                    </label> 
+                    <label class="modal-paragraph" for="user-email">
+                        Почта
+                        <span class="modal-paragraph-wrapper">
+                            <input type="email" class="contact-form_input" name="user-email" id="user-email" required>
+                            <svg svg width="15" height="12"class="modal-svg">
+                                <use href="./images/sprite.svg#icon-mail"></use>
+                            </svg>
+                        </span>
+                    </label> 
+                    <label class="modal-paragraph" for="user-message">Комментарий</label> 
+                    <textarea class="contact-form_message" name="user-message" id="user-message" placeholder="Введите текст"></textarea>
+                    <input type="checkbox" class="contact-form_radio visually-hidden" name="check-policy" value="accapt-policy" id="check-policy">
+                    <label class="checkbox-text" for="check-policy">
+                        Соглашаюсь с рассылкой и принимаю &nbsp;<a class="checkbox-link" href="#">Условия договора</a></label>
+                    <div class="btn-wrapper"> 
+                        <button type="submit" class="contact-form-btn">Отправить</button>
                     </div>
                 </form>
             </div>
