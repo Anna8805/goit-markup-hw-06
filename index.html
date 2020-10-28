@@ -368,19 +368,17 @@
                         </li>
                     </ul>
                 </div>
-                <section class="subscription-form-section">
-                    <form action="#" method="GET" class="subscription-form">
-                        <h3 class="subtitle">Подпишитесь на рассылку</h3>
-                        <div class="subscription-input">
-                            <input type="email" class="subscription-form_input" name="user-email" id="user-email" placeholder="E-mail" required>
-                            <button type="submit" class="subscription-form-btn"> Подписаться
-                                <svg class="social-svg">
-                                    <use href="./images/sprite.svg#icon-telegram"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
-                </section>
+                <form action="#" method="GET" class="subscription-form">
+                    <h3 class="subtitle">Подпишитесь на рассылку</h3>
+                    <div class="subscription-input">
+                        <input type="email" class="subscription-form_input" name="user-email-for-subscription" id="user-email-for-subscription" placeholder="E-mail" required>
+                        <button type="submit" class="subscription-form-btn"> Подписаться
+                            <svg class="social-svg">
+                                <use href="./images/sprite.svg#icon-telegram"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
             </div>
         </footer>
         <div class="backdrop is-hidden" data-modal>
@@ -414,7 +412,7 @@
                         Почта
                         <span class="modal-paragraph-wrapper">
                             <input type="email" class="contact-form_input" name="user-email" id="user-email" required>
-                            <svg svg width="15" height="12"class="modal-svg">
+                            <svg width="15" height="12" class="modal-svg">
                                 <use href="./images/sprite.svg#icon-mail"></use>
                             </svg>
                         </span>
